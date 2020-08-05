@@ -9,12 +9,12 @@ app.set('view engine', 'ejs')
 
 app.get('/about', function(req, res) {
     //res.sendFile(__dirname+'/views/about.html')
-    res.render('about')
+    res.render('about', {fave: ["kittens", "muical theater", "books"]})
   });
 app.get('/', function(req, res) {
     //res.sendFile(__dirname+'/views/index.html');
     //ejs file with this name
-    res.render('index')
+    res.render('index',{name: "Marcia", age: 36} )
   });
   
 

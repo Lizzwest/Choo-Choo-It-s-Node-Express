@@ -6,8 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p>SNEKKKKKKKSSSSSSS</p>
+    <p>Hello, <%= name%></p>
+    <% let dogAge = age*7 %>
+    <p> You are <%= dogAge %> years old</p>
+    <% let status %>
+    <% if(dogAge<100){ status= "young"}else {status = "old"} %>
+    <h3>This means you are <%= status%>!</h3>
     <h1>This is the main page</h1>
-    <h2> Starts off with SNEKKKKKKKSSSSSSS and ends with SNEKKKKKKKSSSSSSS</h2>
+
+    
 </body>
 </html>
