@@ -6,12 +6,17 @@
     <title>Document</title>
 </head>
 <body>
+    <%- include ("../partials/header.ejs") %>
     <h1>about</h1>
     <h3><%= fave %></h3>
     <ul>
+    <!-- for( let i = 0; i < fave.length; i++){
+        fave[i]
+    } -->
         <li><%= fave[0] %></li>
         <li><%= fave[1] %></li>
         <li><%= fave[2] %></li>
     </ul>
+    <%- include ("../partials/footer.ejs") %>
     </body>
 </html>

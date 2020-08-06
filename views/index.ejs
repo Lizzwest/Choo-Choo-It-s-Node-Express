@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+    <%- include ("../partials/header.ejs") %>
+
     <p>Hello, <%= name%></p>
     <% let dogAge = age*7 %>
     <p> You are <%= dogAge %> years old</p>
@@ -14,6 +16,6 @@
     <h3>This means you are <%= status%>!</h3>
     <h1>This is the main page</h1>
 
-    
+<%- include ("../partials/footer.ejs") %>
 </body>
 </html>
